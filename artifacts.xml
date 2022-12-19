@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='EclEmma' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+    <property name='p2.compressed' value='true'/>
+    <property name='p2.timestamp' value='1654095057581'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='13'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.ui' version='3.1.6.202206011447'>
+      <properties size='8'>
+        <property name='artifact.size' value='314099'/>
+        <property name='download.size' value='314099'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.ui'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='download.md5' value='e47ab4c1853c018f9d398fe3025d42b8'/>
+        <property name='download.checksum.md5' value='e47ab4c1853c018f9d398fe3025d42b8'/>
+        <property name='download.checksum.sha-256' value='70473a3532c5e6a3027b160b8b885c9b87e7f6536377c85e02b3a190ffd9f299'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jacoco.core' version='0.8.8.v20220517-1805'>
+      <properties size='5'>
+        <property name='download.size' value='238089'/>
+        <property name='artifact.size' value='238089'/>
+        <property name='download.md5' value='923e9d575537e5cb6c721cd0cb90200f'/>
+        <property name='download.checksum.md5' value='923e9d575537e5cb6c721cd0cb90200f'/>
+        <property name='download.checksum.sha-256' value='588cd595e9ce26f30a596657ed2bb9fc73f512a03a29b9b46b8ce14cd65cbd43'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jacoco.agent' version='0.8.8.v20220415-0921'>
+      <properties size='5'>
+        <property name='download.size' value='301978'/>
+        <property name='artifact.size' value='301978'/>
+        <property name='download.md5' value='07a1a794c385b3b4df6891f3cb31b549'/>
+        <property name='download.checksum.md5' value='07a1a794c385b3b4df6891f3cb31b549'/>
+        <property name='download.checksum.sha-256' value='8c68c95d84ca1bbc6ff4095b87b899a9f7667c87cab95cc55f7591dacf37eb75'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.core' version='3.1.6.202206011447'>
+      <properties size='8'>
+        <property name='artifact.size' value='102923'/>
+        <property name='download.size' value='102923'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.core'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='download.md5' value='731d1c9cd32acd6aea2282131f9f1297'/>
+        <property name='download.checksum.md5' value='731d1c9cd32acd6aea2282131f9f1297'/>
+        <property name='download.checksum.sha-256' value='b3d206c8230f75bd2f1cfcdb0e57ec9ff3fa11f5f1368fb7305d6c7db492bbe6'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm' version='9.3.0.v20220409-0157'>
+      <properties size='5'>
+        <property name='download.size' value='136049'/>
+        <property name='artifact.size' value='136049'/>
+        <property name='download.md5' value='22771f16c05fdbe7deffc5c528bad4bf'/>
+        <property name='download.checksum.md5' value='22771f16c05fdbe7deffc5c528bad4bf'/>
+        <property name='download.checksum.sha-256' value='e75dbf1bc23bd49f8aa2ecc859510e2a54e62097ce2f99a6be22f0f8b1dd92b4'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.commons' version='9.3.0.v20220409-0157'>
+      <properties size='5'>
+        <property name='download.size' value='85977'/>
+        <property name='artifact.size' value='85977'/>
+        <property name='download.md5' value='ad167505a6317a2a4ab7ccb68ae2528e'/>
+        <property name='download.checksum.md5' value='ad167505a6317a2a4ab7ccb68ae2528e'/>
+        <property name='download.checksum.sha-256' value='154b51ff9a90505e52574a8073c4f59f4cc6117da63c6d951f3c8ab37e85231c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.ui' version='3.1.6.202206011447'>
+      <processing size='1'>
+        <step id='org.eclipse.equinox.p2.processing.Pack200Unpacker' required='true'/>
+      </processing>
+      <properties size='11'>
+        <property name='artifact.size' value='142757'/>
+        <property name='download.size' value='142757'/>
+        <property name='format' value='packed'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.ui'/>
+        <property name='maven-extension' value='jar.pack.gz'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-classifier' value='pack200'/>
+        <property name='download.md5' value='76b84f03939f569086f9d9d518949259'/>
+        <property name='download.checksum.md5' value='76b84f03939f569086f9d9d518949259'/>
+        <property name='download.checksum.sha-256' value='aee80c29e5a0315ad1128196518ea62e2ca30c03d5eca9d9ebeb8149ceda4b08'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.eclemma.feature' version='3.1.6.202206011447'>
+      <properties size='9'>
+        <property name='artifact.size' value='22839'/>
+        <property name='download.size' value='22839'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.feature'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.md5' value='22c0e68c5ae7620cee818148493dc740'/>
+        <property name='download.checksum.md5' value='22c0e68c5ae7620cee818148493dc740'/>
+        <property name='download.checksum.sha-256' value='cf939a9239004f2455145de02186a41b4891b08bfff30190bc51dfe710cbe5bb'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.doc' version='3.1.6.202206011447'>
+      <processing size='1'>
+        <step id='org.eclipse.equinox.p2.processing.Pack200Unpacker' required='true'/>
+      </processing>
+      <properties size='11'>
+        <property name='artifact.size' value='218091'/>
+        <property name='download.size' value='218091'/>
+        <property name='format' value='packed'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.doc'/>
+        <property name='maven-extension' value='jar.pack.gz'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-classifier' value='pack200'/>
+        <property name='download.md5' value='18886514f5d8b94f3292671e81f6dab7'/>
+        <property name='download.checksum.md5' value='18886514f5d8b94f3292671e81f6dab7'/>
+        <property name='download.checksum.sha-256' value='0b0893bdc6fdb414998907864c46b87adb136138ba09229e6f61030133235245'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jacoco.report' version='0.8.8.v20220517-1805'>
+      <properties size='5'>
+        <property name='download.size' value='152002'/>
+        <property name='artifact.size' value='152002'/>
+        <property name='download.md5' value='1d96eff9a8a6b93bab4d974ddf7cf3ce'/>
+        <property name='download.checksum.md5' value='1d96eff9a8a6b93bab4d974ddf7cf3ce'/>
+        <property name='download.checksum.sha-256' value='4b4cf33f50be2bae73cea97d513c1a24bbe10ba71c30c7af5df1f61d4ae7986f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.tree' version='9.3.0.v20220409-0157'>
+      <properties size='5'>
+        <property name='download.size' value='66731'/>
+        <property name='artifact.size' value='66731'/>
+        <property name='download.md5' value='d5ae41b69adf009df39b950a3c8e784a'/>
+        <property name='download.checksum.md5' value='d5ae41b69adf009df39b950a3c8e784a'/>
+        <property name='download.checksum.sha-256' value='4630d601fcf6e401e530469fd464923b35d9a7908d77642a3456c56aa938c3ef'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.core' version='3.1.6.202206011447'>
+      <processing size='1'>
+        <step id='org.eclipse.equinox.p2.processing.Pack200Unpacker' required='true'/>
+      </processing>
+      <properties size='11'>
+        <property name='artifact.size' value='38802'/>
+        <property name='download.size' value='38802'/>
+        <property name='format' value='packed'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.core'/>
+        <property name='maven-extension' value='jar.pack.gz'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-classifier' value='pack200'/>
+        <property name='download.md5' value='0cc4752ddecf6f63e03f651fdaa0920f'/>
+        <property name='download.checksum.md5' value='0cc4752ddecf6f63e03f651fdaa0920f'/>
+        <property name='download.checksum.sha-256' value='b9145006548e1325a0044d07caab8f7b2490950940d1b9d7ce88a9a922481e1d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.doc' version='3.1.6.202206011447'>
+      <properties size='8'>
+        <property name='artifact.size' value='231195'/>
+        <property name='download.size' value='231195'/>
+        <property name='maven-groupId' value='org.eclipse.eclemma'/>
+        <property name='maven-artifactId' value='org.eclipse.eclemma.doc'/>
+        <property name='maven-version' value='3.1.6-SNAPSHOT'/>
+        <property name='download.md5' value='10bde276bec52f7d364888dcbeed07c2'/>
+        <property name='download.checksum.md5' value='10bde276bec52f7d364888dcbeed07c2'/>
+        <property name='download.checksum.sha-256' value='f92dc1e97cc33c38c3a13b65922a670ef315badeee7932af3ed317625d4b11f6'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
